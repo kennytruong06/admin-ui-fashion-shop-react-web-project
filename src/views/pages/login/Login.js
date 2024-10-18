@@ -56,7 +56,6 @@ const Login = () => {
       })
 
       const { token } = response.data
-      console.log('thancong' + token)
 
       saveTokenWithExpiry('token', token)
       navigate('/dashboard')
