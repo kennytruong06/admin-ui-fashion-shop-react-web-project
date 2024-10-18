@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
 
 // routes config
-import routes from '../routes'
+import routes from '@/routes'
 
 const AppContent = () => {
   return (
@@ -18,7 +18,7 @@ const AppContent = () => {
                   path={route.path}
                   exact={route.exact}
                   name={route.name}
-                  element={<route.element />}
+                  element={route.element}
                 />
               )
             )
